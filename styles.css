@@ -63,6 +63,9 @@ hr {
 
 /* divs named #header #hero #intro #review #pros-and-cons, #images #*/
 
+#hero img {
+    width: 100%;
+}
 
  @media (min-width: 1000px) {
   body {
