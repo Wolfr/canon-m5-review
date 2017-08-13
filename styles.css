@@ -1,0 +1,176 @@
+
+body {
+    padding: 15px;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 700px) {
+    body {
+        max-width: 90ch;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 1.2vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    body {
+        font-size: 0.9vw;
+    }
+}
+
+.intro {
+    font-size: 120%;
+}
+
+.meta {
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-size: 85%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    margin: 40px 0;
+    border-top: 1px solid #ABABAB;
+}
+
+/* divs named #header #hero #intro #review #pros-and-cons, #images #*/
+
+
+ @media (min-width: 1000px) {
+    body {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        grid-template-rows: repeat(5, auto); 
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+    }
+    
+    #header {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    
+    #header h1 {
+        margin: 0;
+    }
+    
+    #hero {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    #intro {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    #intro p {
+        margin: 0;
+    }
+
+    #review { 
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+
+    #pros-and-cons { 
+      grid-column-start: 1;
+      grid-column-end: 9; 
+      grid-row-start: 5;
+      grid-row-end: 5;
+    }
+    
+    #footer {
+        grid-row-start: 6;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 13; 
+    }
+
+    #images {
+      grid-column-start: 9;
+      grid-column-end: 13;
+      grid-row-start: 4;
+    }
+}
+
+#footer p {
+    opacity: 0.5;
+}
+
+
+h1, h2, h3 {
+    line-height: 1.1;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+.images-grid figure {
+    display: block;
+    padding: 10px;
+}
+
+@media (max-width: 499px) {
+    .images-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .images-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
