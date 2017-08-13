@@ -1,22 +1,25 @@
-body {
-  padding: 15px;
+/* ==========================================================================
+  Stylesheet for Canon EOS M5 review
+   ========================================================================== */
+
+/* Base - unclassed
+   ========================================================================== */
+
+*, *:after, *:before {
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Gotham", "Untitled Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #333;
-  line-height: 1.5;
-  margin: 0 auto;
-  font-size: 1.6rem;
+img {
+  max-width: 100%;
 }
 
-
-* {
-  box-sizing: border-box;
+figure {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 700px) {
@@ -43,44 +46,13 @@ body {
   }
 }
 
-.intro {
-  font-size: 120%;
-}
-
-.meta {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 85%;
-  color: #999;
-}
-
-.meta a {
-  color: #777;
-  text-decoration: none;
-  
-}
-
-hr {
-  border: none;
-  margin: 40px 0;
-  border-top: 1px solid #ABABAB;
-}
-
-/* divs named #header #hero #intro #review #pros-and-cons, #images #*/
-
-#hero {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); 
-}
-
-#hero img {
-  width: 100%;
-  display: block;
-}
-
-#hero picture {
-  display: block;
-  grid-column: 1 / span 12;
+body {
+  font-family: "Gotham", "Untitled Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  padding: 15px;
 }
 
 @media (min-width: 1000px) {
@@ -101,6 +73,57 @@ hr {
     grid-column: main;
   }
   
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+  color: #000;
+}
+
+hr {
+  border: none;
+  margin: 40px 0;
+  border-top: 1px solid #ABABAB;
+}
+
+/* Text styles
+   ========================================================================== */
+
+.intro {
+  font-size: 120%;
+}
+
+.meta {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 85%;
+  color: #999;
+}
+
+.meta a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* Grid elements 
+   ========================================================================== */
+
+#hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+}
+
+#hero img {
+  width: 100%;
+  display: block;
+}
+
+#hero picture {
+  display: block;
+  grid-column: 1 / span 12;
+}
+
+@media (min-width: 1000px) {
   #header h1 {
     margin: 0;
   }
@@ -129,22 +152,10 @@ hr {
   opacity: 0.5;
 }
 
+/* Images grid 
+   ========================================================================== */
 
-h1, h2, h3 {
-  line-height: 1.1;
-  color: #000;
-}
-
-img {
-  max-width: 100%;
-}
-
-figure {
-  padding: 0;
-  margin: 0;
-}
-
-figcaption {
+.images-grid figcaption {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -181,9 +192,16 @@ figcaption {
   }
 }
 
+/* Boxes 
+   ========================================================================== */
+
+ul {
+  margin-left: 2.4rem;
+  padding-left: 0;
+}
 .box {
   background: #DDD;
-  padding: 2rem;
+  padding: 1rem 2.1rem;
   margin: 0 0 2rem;
 }
 
