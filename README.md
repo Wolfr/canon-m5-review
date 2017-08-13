@@ -1,6 +1,8 @@
-# Canon M5 review
+# Canon M5 review + grid layout
 
 A review of Canon's M5 camera.
+
+<strong><a href="http://bookie-bail-56841.netlify.com/">View the result</a></strong>
 
 Experimenting with CSS grid layout.
 
