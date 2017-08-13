@@ -88,8 +88,7 @@ hr {
   body {
     margin: 50px auto;
     display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-gap: 50px;
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: repeat(5, auto); 
   }
