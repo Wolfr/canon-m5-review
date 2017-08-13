@@ -49,11 +49,16 @@ body {
 
 .meta {
   text-transform: uppercase;
-  opacity: 0.5;
   letter-spacing: 1px;
   font-size: 85%;
+  color: #999;
 }
 
+.meta a {
+  color: #777;
+  text-decoration: none;
+  
+}
 
 hr {
   border: none;
@@ -63,11 +68,23 @@ hr {
 
 /* divs named #header #hero #intro #review #pros-and-cons, #images #*/
 
-#hero img {
-    width: 100%;
+#hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
 }
 
- @media (min-width: 1000px) {
+#hero img {
+  width: 100%;
+  display: block;
+}
+
+#hero picture {
+  display: block;
+  grid-column-start: -1;
+  grid-column-end: 14;
+}
+
+@media (min-width: 1000px) {
   body {
     margin: 50px auto;
     display: grid;
@@ -132,6 +149,7 @@ hr {
     grid-column-end: 13;
     grid-row-start: 4;
   }
+
 }
 
 #footer p {
