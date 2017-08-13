@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Gotham", "Untitled Sans", sans-serif;
   color: #333;
   line-height: 1.5;
   margin: 0 auto;
@@ -153,25 +153,32 @@ figcaption {
   overflow: hidden;
 }
 
-
-.images-grid figure {
+.images-grid img {
   display: block;
-  padding: 10px;
+  width: 100%;
+  margin: 0 0 10px;
 }
 
 @media (max-width: 499px) {
   .images-grid {
+    grid-gap: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .images-grid img {
+    margin: 0;
   }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 999px) {
   .images-grid {
+    grid-gap: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
-
+  .images-grid img {
+    margin: 0;
+  }
 }
 
 .box {
@@ -184,9 +191,8 @@ figcaption {
 
     .box-holder {
       display: grid;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
     }
 
