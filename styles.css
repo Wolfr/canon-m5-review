@@ -49,6 +49,7 @@ figure {
 body {
   font-family: "Gotham", "Untitled Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   color: #333;
+  background: #FFF;
   line-height: 1.5;
   margin: 0 auto;
   font-size: 1.6rem;
