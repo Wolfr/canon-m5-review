@@ -48,7 +48,7 @@ figure {
 
 body {
   font-family: "Untitled Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #333;
+  color: #555A5D;
   background: #FFF;
   line-height: 1.5;
   margin: 0 auto;
@@ -85,7 +85,16 @@ body {
 
 h1, h2, h3 {
   line-height: 1.1;
-  color: #000;
+}
+
+h1, h2 {
+  color: #292B2D;
+  font-weight: 700;
+}
+
+h3 {
+  color: #3C4956;
+  font-weight: 500;
 }
 
 ul, ol {
@@ -110,12 +119,17 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 85%;
-  color: #999;
+  color: #5286B1;
 }
 
 .meta a {
-  color: #777;
+  color: #346187;
+  border-bottom: 1px solid rgba(52,97,135, 0.33);
   text-decoration: none;
+}
+
+.meta a:hover {
+  border-bottom: 1px solid rgba(52,97,135, 1);
 }
 
 /* Grid elements 
@@ -223,9 +237,16 @@ hr {
    ========================================================================== */
 
 .box {
-  background: #DDD;
+  background: #DCF0FF;
+  color: #303A42;
   padding: 1rem 2.1rem;
   margin: 0 0 2rem;
+}
+
+.box h1,
+.box h2,
+.box h3 {
+  color: #4C687F;
 }
 
  @media (min-width: 700px) {
