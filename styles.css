@@ -79,8 +79,7 @@ body {
        grid-column: main;
      }
    }
-   
-  
+
 }
 
 h1, h2, h3 {
@@ -95,6 +94,14 @@ h1, h2 {
 h3 {
   color: #3C4956;
   font-weight: 500;
+}
+
+a {
+  color: #0049CD;
+}
+
+a:hover {
+  background: #DCF0FF;
 }
 
 ul, ol {
@@ -163,7 +170,7 @@ hr {
   #intro p {
     margin: 0;
   }
-
+  
   #review { 
     grid-column: 2 / 9;
     grid-row: 4 / 4;
@@ -279,4 +286,56 @@ hr {
       }
     }
 
+}
+
+/* Facts grid 
+   ========================================================================== */
+
+#the-facts {
+  padding-top: 20px;
+}
+
+#the-facts h2 {
+  padding: 0 0 1.2rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.facts-row {
+  border-top: 1px solid #B0C9DC;
+  padding: 10px;
+}
+
+.fact-header {
+  font-weight: 500;
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 90%;
+  margin: 0.5rem 0;
+}
+
+.data-table td,
+.data-table th {
+  padding: 5px;
+}
+
+.data-table th {
+  font-weight: 500;
+  text-align: left;
+  width: 30%;
+}
+
+.data-table tr:nth-child(even) {
+  background: #E6F4FF;
 }
