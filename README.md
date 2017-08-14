@@ -14,7 +14,9 @@ For the gallery, using the awesome <a href="http://photoswipe.com/">Photoswipe</
 
 ### Resources
 
-Resources used:
+Resources used to learn CSS grid:
 
-* https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
 * https://abookapart.com/products/get-ready-for-css-grid-layout
+* https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/
+* http://cssgridgarden.com/
